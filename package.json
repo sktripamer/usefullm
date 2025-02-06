@@ -1,0 +1,53 @@
+{
+  "name": "@sktripamer/usefullm",
+  "version": "0.1.0",
+  "description": "Speed up your workflows when working with LLMs for a more collaborative experience",
+  "main": "bin/cli.js",
+  "bin": {
+    "usefullm": "./bin/cli.js"
+  },
+  "type": "module",
+  "keywords": [
+    "llm",
+    "ai",
+    "cli",
+    "directory",
+    "summarize",
+    "clipboard",
+    "productivity"
+  ],
+  "author": "sktripamer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sktripamer/usefullm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sktripamer/usefullm/issues"
+  },
+  "homepage": "https://github.com/sktripamer/usefullm#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node bin/cli.js",
+    "prepublishOnly": "npm test"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "clipboardy": "^4.0.0",
+    "commander": "^12.0.0",
+    "fast-glob": "^3.3.3",
+    "ignore": "^7.0.3",
+    "isbinaryfile": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
